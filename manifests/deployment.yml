@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nnamazon 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nnamazon
+  template:
+    metadata:
+      labels:
+        app: nnamazon 
+    spec:
+      containers:
+        - name: nnamazon 
+          image: nnlab786.azurecr.io/nnamazon
+          ports:
+          - containerPort: 3000
