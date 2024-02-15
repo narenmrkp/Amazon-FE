@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/Aj7Ay/Amazon-FE.git'
+                git branch: 'main', url: 'https://github.com/narenmrkp/Amazon-FE.git'
             }
         }
         stage("Sonarqube Analysis "){
